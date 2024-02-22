@@ -6,6 +6,16 @@ import java.util.Scanner;
 /**
  * @author MMD
  * @create 2024-02-22
+ * Instead of removing the consecutively identical characters, replace them with a
+ * single character that comes before it alphabetically.
+ * Example:
+ * ccc -> b
+ * bbb -> a
+ * Input: abcccbad
+ * Output:
+ * -> abbbad, ccc is replaced by b
+ * -> aaad, bbb is replaced by a
+ * -> d
  */
 public class Test2 {
     public static String changeMoreThanThreeConsecutiveCharacters(String input) {
